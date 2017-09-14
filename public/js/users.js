@@ -8,7 +8,7 @@ function extractUsers (data, id)
 {
 	if (typeof(data) == "string") 
 	{
-		$("#users_list").html(tmp);
+		$("#users_list").html(data);
 		return;
 	}
 	var tmp = "";
