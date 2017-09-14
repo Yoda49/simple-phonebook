@@ -21,3 +21,8 @@ PostgreSQL:
 Node.JS:
 Версия: 8+
 ```
+```
+Запуск:
+npm install
+node app.js
+```
