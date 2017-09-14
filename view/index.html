@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+	<TITLE>Тестовое задание</TITLE>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+	<LINK REL='stylesheet' HREF='/css/style.css' TYPE='text/css' MEDIA='all'/>
+
+</HEAD>
+
+<BODY>
+	<DIV ID='users' CLASS='main_blocks'>
+		<SPAN CLASS='header'>Абонентский справочник:</SPAN>
+		<DIV ID='users_list' CLASS='info_block'>
+		{{{users_list}}}
+		</DIV>
+		<DIV ID='user_info' CLASS='control_block'>
+			<DIV CLASS='user_info_text' ID='secondNameText' >Фамилия:       </DIV>*           <INPUT CLASS='user_info_input' TYPE='text' ID='secondNameInput'  MAXLENGTH='20' DISABLED><BR>
+			<DIV CLASS='user_info_text' ID='firstNameText'  >Имя:           </DIV>*           <INPUT CLASS='user_info_input' TYPE='text' ID='firstNameInput'   MAXLENGTH='20' DISABLED><BR>
+			<DIV CLASS='user_info_text' ID='fatherNameText' >Отчество:      </DIV>&ensp;&ensp;<INPUT CLASS='user_info_input' TYPE='text' ID='fatherNameInput'  MAXLENGTH='20' DISABLED><BR>
+			<DIV CLASS='user_info_text' ID='phoneNumberText'>Номер телефона:</DIV>*           <INPUT CLASS='user_info_input' TYPE='text' ID='phoneNumberInput' MAXLENGTH='7'  DISABLED><BR>
+			<DIV CLASS='user_info_text' ID='cityCodeText'   >Код города:    </DIV>&ensp;&ensp;<INPUT CLASS='user_info_input' TYPE='text' ID='cityCodeInput'    MAXLENGTH='3'  DISABLED><BR>
+			
+			<DIV CLASS='user_info_text' ID='cityNameText'>Город:</DIV>*	
+			<SELECT ID='cityNameInput' STYLE='width: 287px;' DISABLED>
+			{{{cities_select}}}
+			</SELECT><BR>
+		
+			<DIV CLASS='user_info_text' ID='countryNameText'>Страна:</DIV>*	
+			<SELECT ID='countryNameInput' STYLE='width: 287px;' DISABLED>
+			{{{countries_select}}}
+			</SELECT>
+			
+			<DIV CLASS='bottom'>
+				* поле обязательное к заполнению<BR><BR>
+				<INPUT TYPE='button' ID='delUser'     VALUE='Удалить абонента'  DISABLED>
+				<INPUT TYPE='button' ID='editUser'    VALUE='Изменить абонента' DISABLED>
+				<INPUT TYPE='button' ID='addSaveUser' VALUE='Добавить абонента'>
+				<BR><BR>
+			</DIV>
+		</DIV>
+	</DIV>
+	
+	<DIV ID='codes' CLASS='main_blocks'>
+		<SPAN CLASS='header'>Телефонные коды городов:</SPAN>
+		<DIV ID='codes_list' CLASS='info_block'>
+		{{{codes_list}}}
+		</DIV>
+		<DIV ID='code_info' CLASS='control_block'>
+			<DIV CLASS='code_info_text' ID='codes_cityName'>Город: </DIV>* <INPUT CLASS='code_info_input' TYPE='text' ID='codes_cityNameInput' MAXLENGTH='20' DISABLED><BR>
+			<DIV CLASS='code_info_text' ID='codes_cityCode'>Код:   </DIV>* <INPUT CLASS='code_info_input' TYPE='text' ID='codes_cityCodeInput' MAXLENGTH='3'  DISABLED><BR>
+			<DIV CLASS='bottom'>
+				* поле обязательное к заполнению<BR><BR>
+				<INPUT TYPE='button' ID='delCode'     VALUE='Удалить код'  DISABLED>
+				<INPUT TYPE='button' ID='editCode'    VALUE='Изменить код' DISABLED>
+				<INPUT TYPE='button' ID='addSaveCode' VALUE='Добавить код'>
+				<BR><BR>
+			</DIV>
+		</DIV>
+	</DIV>
+	
+	<DIV ID='countries' CLASS='main_blocks'>
+		<SPAN CLASS='header'>Список стран:</SPAN>
+		<DIV ID='countries_list' CLASS='info_block'>
+		{{{countries_list}}}
+		</DIV>
+		<DIV ID='country_info' CLASS='control_block'>
+			<DIV ID='country_text'>Название страны: </DIV>* <INPUT CLASS='country_info_input' TYPE='text' ID='country_input' MAXLENGTH='20' DISABLED><BR>
+			<DIV CLASS='bottom'>
+				* поле обязательное к заполнению<BR><BR>
+				<INPUT TYPE='button' ID='delCountry'     VALUE='Удалить страну' DISABLED>
+				<INPUT TYPE='button' ID='editCountry'    VALUE='Изменить страну' DISABLED>
+				<INPUT TYPE='button' ID='addSaveCountry' VALUE='Добавить страну'>
+				<BR><BR>
+			</DIV>
+		</DIV>
+	</DIV>
+</BODY>
+
+
+<SCRIPT SRC='/js/jquery.min.js' TYPE='text/javaSCRIPT'></SCRIPT>
+<SCRIPT SRC='/js/users.js'      TYPE='text/javaSCRIPT'></SCRIPT>
+<SCRIPT SRC='/js/codes.js'      TYPE='text/javaSCRIPT'></SCRIPT>
+<SCRIPT SRC='/js/countries.js'  TYPE='text/javaSCRIPT'></SCRIPT>
+
+</HTML>

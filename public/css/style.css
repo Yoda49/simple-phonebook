@@ -1,0 +1,156 @@
+.main_blocks
+{
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+	width: 550px;
+	border: 1px solid #444444;
+	background: #DDEEFF;
+}
+
+.info_block
+{
+	width: 518px;
+	height: 290px;
+	border: 1px solid #444444;
+	overflow-y: scroll;
+	font: 100% verdana;
+	position: relative;
+	margin: 10px;
+	background: white;
+	padding: 5px;
+}
+
+.header
+{
+	font: bold 100% verdana;
+	margin: 10px;
+	display: block;
+}
+
+.control_block
+{
+	margin-left: 10px;
+	width: 530px;
+	height: 320px;
+	font: 100% verdana;
+	position: relative;
+	vertical-align:top;
+}
+
+.bottom
+{
+	position: absolute;
+	bottom: 0px;
+}
+
+/* text & inputs ============================ */
+.user_info_text
+{
+	display: inline-block;
+	width: 227px;
+	margin-bottom: 15px;
+	font: bold 100% verdana;
+}
+
+.user_info_input
+{
+	width: 283px;
+}
+
+.code_info_text
+{
+	display: inline-block;
+	width: 227px;
+	margin-bottom: 15px;
+	font: bold 100% verdana;
+}
+
+.code_info_input
+{
+	width: 283px;
+}
+
+#country_text
+{
+	display: inline-block;
+	width: 227px;
+	margin-bottom: 15px;
+	font: bold 100% verdana;
+}
+
+#country_input
+{
+	width: 283px;
+}
+
+
+/* selected ============================ */
+.abonent
+{
+	cursor: pointer;
+}
+
+.abonent_selected
+{
+	cursor: pointer;
+	background: #A0A5AA;
+}
+
+.abonent:hover
+{
+	background: #D0D5DA;
+}
+
+.ccode
+{
+	cursor: pointer;
+}
+
+.ccode_selected
+{
+	cursor: pointer;
+	background: #A0A5AA;
+}
+
+.ccode:hover
+{
+	background: #D0D5DA;
+}
+
+.ccountry
+{
+	cursor: pointer;
+}
+
+.ccountry_selected
+{
+	cursor: pointer;
+	background: #A0A5AA;
+}
+
+.ccountry:hover
+{
+	background: #D0D5DA;
+}
+
+
+
+
+
+
+
+
+
+
+
+#createUser
+{
+	cursor: pointer;
+}
+
+input
+{
+	cursor: pointer;
+	width: 172px;
+}
