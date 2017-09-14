@@ -9,6 +9,7 @@ email: upv@bk.ru
 PostgreSQL:
 Драйвер: Sequelize
 
+Настройки по умолчанию:
 Хост: localhost
 База данных: test
 Логин: postgres
