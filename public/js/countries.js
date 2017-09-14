@@ -104,6 +104,11 @@ $("#delCountry").click(function ()
 				$(".ccountry").click(view_country);
 				$("#delCountry"  ).attr("DISABLED", true);
 				$("#editCountry" ).attr("DISABLED", true);
+				
+				if (users_status == "add")
+				{
+					$("#countryNameInput").val("-1");
+				}
 			}
 		}
 	});

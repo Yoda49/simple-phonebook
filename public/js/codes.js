@@ -124,6 +124,12 @@ $("#delCode").click(function ()
 				$(".ccode").click(view_code);
 				$("#delCode"    ).attr("DISABLED", true);
 				$("#editCode"   ).attr("DISABLED", true);
+				
+				if (users_status == "add")
+				{
+					$("#cityNameInput").val("-1");
+					$("#cityCodeInput").val("");
+				}
 			}
 		}
 	});
